@@ -11,32 +11,50 @@
     tools:context="silva.miguel.clicker.MainActivity">
 
     <Button
-        android:text="Reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonReset"
-        android:layout_below="@+id/buttonClick"
-        android:layout_alignLeft="@+id/buttonClick"
-        android:layout_alignStart="@+id/buttonClick"
-        android:layout_marginTop="86dp" />
-
-    <Button
         android:text="Click"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/buttonClick"
-        android:layout_marginTop="97dp"
-        android:layout_below="@+id/textViewCount"
+        android:layout_above="@+id/buttonReset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp" />
+
+    <TextView
+        android:text="Coordinates:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:id="@+id/textViewCoordinates"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="Get Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonGPS"
+        android:layout_centerInParent="false"
+        android:layout_above="@+id/textViewCount"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonReset"
+        android:layout_marginBottom="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/buttonClick"
+        android:layout_alignStart="@+id/buttonClick" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
         android:id="@+id/textViewCount"
-        android:layout_marginTop="48dp"
         android:textSize="30sp"
-        android:layout_alignParentTop="true"
+        android:layout_above="@+id/buttonClick"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
